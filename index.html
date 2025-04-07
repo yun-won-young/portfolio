@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 웹페이지 설명 -->
+    <meta
+      name="description"
+      content="윤원영의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- 웹페이지와 관련된 키워드를 정의 -->
+    <meta
+      name="keywords"
+      content="반응형, 웹퍼블리싱, 웹퍼블리셔, 영상, 멀티미디어, 영상편집, 포트폴리오, 웹디자인"
+    />
+    <!-- 검색 엔진 크롤링(정보를 쭉 끌어모으는 것) 설정 -->
+    <meta name="robots" content="index, follow" />
+    <!-- canonical URL -->
+    <link rel="canonical" href="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 제목 // 미리보기 이미지  // -->
+    <meta property="og:title" content="Andrew의 포트폴리오 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 사이트 이름 -->
+    <meta property="og:site_name" content="Andrew의 웹사이트" />
+    <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
+    <meta property="og:type" content="website" />
+    <!-- Open Graph 프로토콜에서 사용되는 메타 태그의 속성 중 하나로, 페이지의 간략한 설명을 제공하는 데 사용 -->
+    <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
+    <meta property="og:url" content="" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
+    <meta property="og:image" content="images/img-sleep.png" />
+    <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
+    <meta
+      property="og:description"
+      content="윤원영의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="images/img-sleep.png" />
+    <meta name="twitter:title" content="원영의 포트폴리오 웹사이트" />
+    <meta
+      name="twitter:description"
+      content="원영의 포트폴리오 웹사이트입니다. 반응형 웹 디자인, 웹 퍼블리싱, 영상 편집 등 다양한 작업물을 확인하실 수 있습니다."
+    />
+    <meta name="twitter:image" content="images/img-sleep.png" />
+
+    <title>포트폴리오 사이트 구현</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://kit.fontawesome.com/a588375436.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="nav-bar">
+        <ul class="nav-left">
+          <li>
+            <a href="#home">
+              <i class="fa-solid fa-earth-asia"></i>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li>
+            <a href="#section3">
+              <i class="fa-solid fa-glasses"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:dnjsdud2020@naver.com" target="_blank">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <header id="home" class="header">
+        <h1><strong>YOUNG WON’ PORTFOLIO</strong><br /></h1>
+        <p>Specializing in motion graphics and web design</p>
+      </header>
+
+      <section id="section1" class="item">
+        <div class="section1-inner">
+          <img class="item-img" src="images/first-img6.jpg" alt="우주인" />
+          <div class="intro">
+            <p>The gateway before entering</p>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="section2" class="item">
+        <div class="content">
+          <p>My story</p>
+          <span>
+            안녕하세요, 모션그래픽과 웹페이지 디자인에 관심이 많은 디자이너 윤원영입니다.<br /><br />
+
+            고고학을 전공하며 문화유산을 더 많은 사람들에게 어떻게 알릴 수 있을까 고민했고, 그
+            과정에서 스토리 전달에 적합한 매체로 영상과 웹을 선택하게 되었습니다.<br /><br />
+
+            졸업 후에는 모션그래픽과 웹 구현을 중심으로 디자인을 공부하고있고, 사람들의 상상과
+            사고를 뛰어넘는 창의적인 디자인을 꿈꾸며 꾸준히 도전하고 있습니다.
+          </span>
+
+          <div class="stack-list">
+            <span>Technical Stack</span>
+            <div class="stack-icon">
+              <img src="images/iconoir_adobe-after-effects.png" alt="에펙" />
+              <img src="images/catppuccin_adobe-ai (1).png" alt="일러" />
+              <img src="images/catppuccin_adobe-ps (1).png" alt="포토샵" />
+              <img src="images/solar_figma-linear.png" alt="피그마" />
+              <img src="images/proicons_html (1).png" alt="html" />
+              <img src="images/fluent_javascript-16-regular (1).png" alt="자바스크립트" />
+            </div>
+          </div>
+        </div>
+
+        <div class="my-img">
+          <div class="box-purple">
+            <img src="images/img2.png" alt="누끼딴 사진" />
+          </div>
+          <div class="box-yellow">
+            <span class="interview">INTERVIEW VIDEO </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="section3" class="item">
+        <div class="text-wrap">
+          <p class="left">A COLLECTION</p>
+          <p class="right">OF MY WORKS</p>
+        </div>
+        <ul class="menu-bar">
+          <li class="on"><a href="*">ALL</a></li>
+          <li><a href=".web">WEB</a></li>
+          <li><a href=".ad">AD</a></li>
+        </ul>
+
+        <section class="section">
+          <article class="web">
+            <div>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/yY7iB1fI4Wk?si=kO5JkfDUL2atgQyb"
+                title="typo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h2>타이포그래피 카피 & 창작</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, odit!</p>
+              <ul class="card-links">
+                <li><a href="https://drive.google.com/drive/home" target="_blank">드라이브</a></li>
+                <li class="plan-modal" data-id="1"><a href="#">기획서</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="ad">
+            <div>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/yY7iB1fI4Wk?si=kO5JkfDUL2atgQyb"
+                title="typo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h2>타이포그래피 카피 & 창작</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, odit!</p>
+              <ul class="card-links">
+                <li><a href="https://drive.google.com/drive/home" target="_blank">드라이브</a></li>
+                <li class="plan-modal" data-id="2"><a href="#">기획서</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="web">
+            <div>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/yY7iB1fI4Wk?si=kO5JkfDUL2atgQyb"
+                title="typo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h2>타이포그래피 카피 & 창작</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, odit!</p>
+              <ul class="card-links">
+                <li><a href="https://drive.google.com/drive/home" target="_blank">드라이브</a></li>
+                <li class="plan-modal" data-id="3"><a href="#">기획서</a></li>
+              </ul>
+            </div>
+          </article>
+          <article class="ad">
+            <div>
+              <iframe
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/yY7iB1fI4Wk?si=kO5JkfDUL2atgQyb"
+                title="typo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h2>타이포그래피 카피 & 창작</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, odit!</p>
+              <ul class="card-links">
+                <li><a href="https://drive.google.com/drive/home" target="_blank">드라이브</a></li>
+                <li class="plan-modal" data-id="4"><a href="#">기획서</a></li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!-- modal -->
+      <div class="interview-modal">
+        <figure>
+          <video controls src="videos/typo.mp4"></video>
+        </figure>
+        <div class="close">CLOSE</div>
+      </div>
+
+      <div class="modal">
+        <div class="conti">
+          <!-- <h1>영상 기획서 01</h1>
+          <img src="https://picsum.photos/700/300?random=1" alt="콘티1" />
+          <img src="https://picsum.photos/700/300?random=2" alt="콘티2" />
+          <img src="https://picsum.photos/700/300?random=3" alt="콘티3" />
+          <img src="https://picsum.photos/700/300?random=4" alt="콘티4" /> -->
+        </div>
+        <div class="close">CLOSE</div>
+      </div>
+    </div>
+  </body>
+</html>
