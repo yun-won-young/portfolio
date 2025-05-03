@@ -13,7 +13,7 @@ span {
 }
 .wrap {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   /* background: linear-gradient(to bottom, rgb(255 255 251), rgb(79, 131, 228)); */
   background-color: rgb(255, 255, 251);
 }
@@ -58,7 +58,7 @@ span {
   letter-spacing: 3px;
 }
 .header h1 strong {
-  font-size: 20rem;
+  font-size: clamp(8rem, 10.4vw, 20rem);
 }
 .header p {
   position: relative;
@@ -69,7 +69,7 @@ span {
 .item {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ span {
   /* padding-top: 150px; */
   /* height: calc(100vh - 220px); */
   margin-top: 150px;
-  height: 100vh;
+  height: 100dvh;
   /* padding-bottom: 220px; */
   overflow: hidden;
 }
@@ -124,7 +124,7 @@ span {
   position: relative;
   /* justify-content: flex-start; */
   align-items: flex-start;
-  height: 90vh;
+  min-height: 100dvh;
   /* text-align: left; */
   padding: 200px 26% 20px;
   gap: 15%;
@@ -163,12 +163,24 @@ span {
 }
 .my-img {
   position: relative;
-  width: 400px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
   height: 350px;
+  aspect-ratio: 3 / 2;
+  margin: 0 auto;
+  /* height: auto; */
   top: 0%;
   right: 7%;
   cursor: pointer;
   transition: transform 0.4 ease;
+}
+.my-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 .my-img:hover {
   /* transform: scale(1.05); */
@@ -217,7 +229,7 @@ span {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   z-index: 999;
@@ -253,8 +265,10 @@ span {
 #section3 {
   position: relative;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  height: auto;
   flex-direction: column;
+  margin-bottom: 10dvh;
 }
 .text-wrap p {
   font-family: "Bebas Neue", sans-serif;
@@ -344,9 +358,10 @@ span {
 
 .section article iframe {
   width: 100%;
-  height: 315px;
+  /* height: 315px; */
   aspect-ratio: 16/9;
   border-radius: 10px;
+  display: block;
   /* object-fit: cover; */
 }
 
@@ -385,13 +400,252 @@ span {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   background-color: #fff;
 }
+.footer {
+  position: relative;
+  width: 100%;
+  height: 30dvh;
+  background-color: rgb(174, 207, 237);
+}
+.footer-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px calc(60px + env(safe-area-inset-bottom)) 20px;
+}
+.footer-inner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.footer-inner .copy {
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
+  letter-spacing: 1px;
+  line-height: 35px;
+  font-size: 3rem;
+  color: #fff;
+}
+.sns-box {
+  position: relative;
+  display: block;
+}
+.sns-title {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.sns {
+  position: relative;
+}
+.sns li a {
+  padding: 3px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.email {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 3px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1024px) {
+  .stack-icon {
+    transform: scale(0.9);
+  }
+  .my-img {
+    transform: scale(0.8);
+  }
+
+  .text-wrap {
+    font-size: 10rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    width: 35vw;
+  }
+  .header h1 strong {
+    /* font-size: 9rem; */
+    font-size: clamp(6rem, 10vw, 18rem);
+  }
+  .header p {
+    margin-top: -12px;
+  }
+  #section2 {
+    /* outline: 2px dashed green; */
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+  #section2 p {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    /* align-items: flex-start; */
+  }
+  #section2 .content {
+    /* display: block; */
+  }
+  .my-img {
+    /* border: 2px solid red; */
+    position: relative;
+    display: block;
+    width: 100%;
+    /* height: 380px; */
+    margin: 0 auto;
+    min-height: 380px;
+    /* outline: 2px dashed red; */
+  }
+
+  .my-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #section3 {
+    position: relative;
+    margin-top: 35vh;
+    /* outline: 2px dashed blue; */
+  }
+  .text-wrap {
+    font-size: 7rem;
+  }
+  .section {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section article {
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+  .section article iframe {
+    width: 100%;
+    height: auto; /* 고정된 높이 제거 */
+    aspect-ratio: 16 / 9;
+    /* display: block;
+    border-radius: 10px;
+    border: none; */
+  }
+
+  .interview-modal figure {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+  }
+
+  .interview-modal figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 또는 cover, 상황에 따라 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-bar {
+    position: fixed;
+    top: 20px;
+    transform: translateX(-50%) scale(0.8);
+    width: 45vw;
+    left: 50%;
+    /* transform: translateX(-50%); */
+  }
+  .header h1 strong {
+    font-size: 5.5rem;
+  }
+  .header p {
+    font-size: 1.6rem;
+  }
+  .section1-inner p {
+    font-size: 1.6rem;
+  }
+  .content span {
+    font-size: 1.7rem;
+  }
+
+  .my-img {
+    /* border: 2px solid red; */
+    /* position: relative; */
+    display: flex;
+    /* display: block; */
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    /* flex-direction: column; */
+    /* aspect-ratio: 3 /2; */
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 300px; */
+    /* min-height: unset; */
+    /* outline: 2px dashed red; */
+  }
+
+  .my-img img {
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+    /* display: block; */
+    object-fit: cover;
+    /* border-radius: 10px; */
+  }
+  .box-yellow {
+    position: absolute;
+    top: 21%;
+    left: 27%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    transition: left 0.5s ease;
+  }
+  .box-yellow .interview {
+    position: absolute;
+    top: 37%;
+    right: -36%;
+    font-size: 2.5rem;
+    rotate: 90deg;
+  }
+
+  .text-wrap {
+    font-size: 4.5rem;
+    gap: 13px;
+  }
+  .footer-inner .copy {
+    font-size: 1.9rem;
+  }
+  .sns li a {
+    font-size: 1.3rem;
+  }
+  .sns-title {
+    margin-top: 1px;
+    font-size: 1.8rem;
+  }
+  .email {
+    font-size: 1.3rem;
+  }
+}
 
 .modal {
   position: fixed;
   top: 0;
   left: -100%;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   z-index: 999;

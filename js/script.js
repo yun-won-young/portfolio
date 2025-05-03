@@ -91,8 +91,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
         gsap.to(window, {
           scrollTo: targetTop,
-          duration: 0.5,
-          ease: "none",
+          duration: 1.2,
+          ease: "expo.out",
         });
       }
     });
