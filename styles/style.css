@@ -220,7 +220,7 @@ span {
 .box-yellow .interview {
   position: absolute;
   top: 30%;
-  right: -21%;
+  right: -19%;
   font-size: 2.5rem;
   rotate: 90deg;
 }
@@ -458,6 +458,9 @@ span {
 
 /* 반응형 */
 @media screen and (max-width: 1024px) {
+  .nav-bar {
+    width: 30vw;
+  }
   .stack-icon {
     transform: scale(0.9);
   }
@@ -468,6 +471,9 @@ span {
   .text-wrap {
     font-size: 10rem;
     margin-top: 2rem;
+  }
+  .footer {
+    padding-bottom: 250px; /* or 적절한 값 */
   }
 }
 
@@ -486,7 +492,7 @@ span {
     /* outline: 2px dashed green; */
     flex-direction: column;
     align-items: center;
-    padding-bottom: 120px;
+    padding-bottom: 75px;
   }
   #section2 p {
     display: flex;
@@ -516,7 +522,7 @@ span {
 
   #section3 {
     position: relative;
-    margin-top: 35vh;
+    margin-top: 40vh;
     /* outline: 2px dashed blue; */
   }
   .text-wrap {
@@ -554,7 +560,7 @@ span {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
   .nav-bar {
     position: fixed;
     top: 20px;
@@ -564,16 +570,19 @@ span {
     /* transform: translateX(-50%); */
   }
   .header h1 strong {
-    font-size: 5.5rem;
+    font-size: 4.9rem;
   }
   .header p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .section1-inner p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+  #section2 .content {
+    transform: scale(0.85);
   }
   .content span {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .my-img {
@@ -617,12 +626,12 @@ span {
     position: absolute;
     top: 37%;
     right: -36%;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     rotate: 90deg;
   }
 
   .text-wrap {
-    font-size: 4.5rem;
+    font-size: 4rem;
     gap: 13px;
   }
   .footer-inner .copy {
@@ -637,6 +646,9 @@ span {
   }
   .email {
     font-size: 1.3rem;
+  }
+  .footer {
+    padding-bottom: 280px; /* or 적절한 값 */
   }
 }
 
