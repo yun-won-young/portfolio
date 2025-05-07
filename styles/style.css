@@ -562,42 +562,73 @@ span {
 
 @media screen and (max-width: 430px) {
   .nav-bar {
-    position: fixed;
-    top: 20px;
-    transform: translateX(-50%) scale(0.8);
-    width: 45vw;
+    /* position: fixed;
+    top: 20px; */
+    transform: translateX(-50%);
+    /* width: 45vw; */
+    width: auto;
+    min-width: 170px;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 18px;
     left: 50%;
     /* transform: translateX(-50%); */
   }
+  .header {
+    top: 55px;
+    padding: 0 5px; /* 더 작은 화면 좌우 여백 */
+  }
   .header h1 strong {
-    font-size: 4.9rem;
+    font-size: 4.5rem; /* 대폭 축소 (테스트하며 값 찾기) */
+    /* font-size: 11vw; */ /* 또는 vw 단위로 */
+    letter-spacing: 0.5px; /* 자간 최소화 */
+    line-height: 1.1;
   }
   .header p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .section1-inner p {
     font-size: 1.5rem;
   }
+
+  #section2 {
+    padding: 60px 15px 40px; /* 전체적인 패딩 축소 */
+    gap: 30px;
+  }
+  #section2 p {
+    /* "My story" 제목 */
+    font-size: 2.5rem; /* 제목 폰트 축소 */
+    margin-bottom: 20px;
+  }
+
   #section2 .content {
     transform: scale(0.85);
   }
   .content span {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+    line-height: 1.55;
+  }
+  .stack-list {
+    margin-top: 30px;
+  }
+  .stack-icon img {
+    width: 28px; /* 아이콘 크기 축소 */
+    height: 28px;
   }
 
   .my-img {
     /* border: 2px solid red; */
     /* position: relative; */
-    display: flex;
+    /* display: flex; */
     /* display: block; */
-    margin: 0 auto;
-    width: 90%;
-    max-width: 400px;
+    /* margin: 0 auto;
+    width: 90%; */
+    max-width: 280px;
     /* flex-direction: column; */
     /* aspect-ratio: 3 /2; */
-    min-height: 250px;
+    /* min-height: 250px;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* min-height: 300px; */
     /* min-height: unset; */
     /* outline: 2px dashed red; */
@@ -612,27 +643,28 @@ span {
     /* border-radius: 10px; */
   }
   .box-yellow {
-    position: absolute;
-    top: 21%;
-    left: 27%;
-    width: 100%;
+    /* position: absolute; */
+    top: 45px;
+    left: 60px;
+    /* width: 100%;
     height: 100%;
     opacity: 0.9;
     border-radius: 10px;
     background-color: #f5f5f5;
-    transition: left 0.5s ease;
+    transition: left 0.5s ease; */
   }
   .box-yellow .interview {
-    position: absolute;
-    top: 37%;
-    right: -36%;
-    font-size: 2.3rem;
-    rotate: 90deg;
+    font-size: 1.9rem;
+    right: -17%;
   }
-
+  #section3 {
+    margin-top: 10vh; /* 상단 마진 조정 */
+    padding-top: 3vh;
+  }
   .text-wrap {
-    font-size: 4rem;
-    gap: 13px;
+    font-size: 3.5rem;
+    gap: 10px;
+    letter-spacing: 0.5px; /* 자간 최소화 */
   }
   .footer-inner .copy {
     font-size: 1.9rem;
@@ -648,7 +680,18 @@ span {
     font-size: 1.3rem;
   }
   .footer {
+    min-height: 200px;
     padding-bottom: 280px; /* or 적절한 값 */
+  }
+  /* Modal 스타일은 화면 크기에 따라 크게 변하지 않을 수 있지만, 필요시 조정 */
+  .interview-modal figure {
+    width: 95%; /* 모달 영상 너비 최대화 */
+  }
+  .modal .conti {
+    /* 기획서 모달 */
+    width: 90%;
+    height: auto; /* 내부 이미지에 따라 자동 조절되도록 */
+    max-height: 70vh; /* 최대 높이 제한 */
   }
 }
 
