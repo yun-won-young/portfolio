@@ -188,59 +188,62 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const planBtns = document.querySelectorAll(".plan-modal");
-  const modalConti = document.querySelector(".modal .conti");
-  const modal = document.querySelector(".modal");
-  const modalBtn = document.querySelector(".modal .close");
+  //기획서 이미지 창
+  // const planBtns = document.querySelectorAll(".plan-modal");
+  // const modalConti = document.querySelector(".modal .conti");
+  // const modal = document.querySelector(".modal");
+  // const modalBtn = document.querySelector(".modal .close");
 
-  const contiImages = {
-    1: [
-      "https://picsum.photos/700/300?random=1",
-      "https://picsum.photos/700/300?random=2",
-      "https://picsum.photos/700/300?random=3",
-    ],
-    2: [
-      "https://picsum.photos/700/300?random=4",
-      "https://picsum.photos/700/300?random=5",
-      "https://picsum.photos/700/300?random=6",
-    ],
-    3: [
-      "https://picsum.photos/700/300?random=7",
-      "https://picsum.photos/700/300?random=8",
-      "https://picsum.photos/700/300?random=9",
-    ],
-    4: [
-      "https://picsum.photos/700/300?random=10",
-      "https://picsum.photos/700/300?random=11",
-      "https://picsum.photos/700/300?random=13",
-    ],
-  };
+  // const contiImages = {
+  //   1: [
+  //     "https://picsum.photos/700/300?random=1",
+  //     "https://picsum.photos/700/300?random=2",
+  //     "https://picsum.photos/700/300?random=3",
+  //   ],
+  //   2: [
+  //     "https://picsum.photos/700/300?random=4",
+  //     "https://picsum.photos/700/300?random=5",
+  //     "https://picsum.photos/700/300?random=6",
+  //   ],
+  //   3: [
+  //     "https://picsum.photos/700/300?random=7",
+  //     "https://picsum.photos/700/300?random=8",
+  //     "https://picsum.photos/700/300?random=9",
+  //   ],
+  //   4: [
+  //     "https://picsum.photos/700/300?random=10",
+  //     "https://picsum.photos/700/300?random=11",
+  //     "https://picsum.photos/700/300?random=13",
+  //   ],
+  // };
 
-  planBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const id = btn.dataset.id;
+  // planBtns.forEach((btn) => {
+  //   btn.addEventListener("click", (e) => {
+  //     e.preventDefault();
+  //     const id = btn.dataset.id;
 
-      modalConti.innerHTML = "<h1>영상 기획서" + id + "</h1>";
+  //     modalConti.innerHTML = "<h1>영상 기획서" + id + "</h1>";
 
-      contiImages[id].forEach((src) => {
-        const img = document.createElement("img");
-        img.src = src;
-        modalConti.appendChild(img);
-      });
-      modal.classList.add("active");
-    });
-  });
+  //     contiImages[id].forEach((src) => {
+  //       const img = document.createElement("img");
+  //       img.src = src;
+  //       modalConti.appendChild(img);
+  //     });
+  //     modal.classList.add("active");
+  //   });
+  // });
 
-  // 모달 닫기
-  modalBtn.addEventListener("click", () => {
-    modal.classList.remove("active");
-  });
+  // // 모달 닫기
+  // modalBtn.addEventListener("click", () => {
+  //   modal.classList.remove("active");
+  // });
 
-  // 모달 바깥 영역 클릭 시 닫기
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
-    }
-  });
+  // // 모달 바깥 영역 클릭 시 닫기
+  // modal.addEventListener("click", (e) => {
+  //   if (e.target === modal) {
+  //     modal.classList.remove("active");
+  //   }
+  // });
+
+  // 기획서 모달창 이미지
 });
