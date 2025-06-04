@@ -257,13 +257,26 @@ span {
   font-weight: bold;
 }
 .interview-modal figure {
-  width: 72%;
-  height: 82%;
+  /* width: 72%;
+  height: 82%; */
+  line-height: 0; /* iframe 하단 여백 제거 시도 */
+  /* 반응형을 위해 iframe의 최대 크기를 제한할 수 있습니다. */
+  width: auto; /* 내부 iframe 크기에 맞춰짐 */
+  max-width: 90vw; /* 화면 너비의 90%를 넘지 않도록 */
 }
-.interview-modal figure video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.interview-modal iframe {
+  /* HTML에서 width="800" height="450"으로 기본 크기 지정 */
+  display: block; /* 불필요한 공백 제거 및 margin auto 적용 위함 */
+  margin: 0 auto; /* figure 내에서 수평 중앙 정렬 (figure가 iframe보다 클 경우)
+                     현재는 figure가 iframe 크기를 따르므로 큰 의미 없을 수 있음 */
+  border: none; /* 기본 테두리 제거 */
+  border-radius: 12px; /* 모서리 둥글게 */
+
+  /* 반응형을 위한 최대 크기. figure의 max-width와 연동될 수 있음 */
+  max-width: 100%; /* figure의 너비를 넘지 않도록 */
+  /* 높이는 가로세로 비율 유지를 위해 width에 따라 자동 조절되거나,
+     JS 또는 미디어쿼리로 비율에 맞게 설정해야 합니다.
+     HTML에서 height를 지정했으므로 일단은 그 값을 따릅니다. */
 }
 #section3 {
   position: relative;
@@ -701,10 +714,9 @@ span {
     min-height: 200px;
     padding-bottom: 280px; /* or 적절한 값 */
   }
+
   /* Modal 스타일은 화면 크기에 따라 크게 변하지 않을 수 있지만, 필요시 조정 */
-  .interview-modal figure {
-    width: 95%; /* 모달 영상 너비 최대화 */
-  }
+
   .modal .conti {
     /* 기획서 모달 */
     width: 90%;
