@@ -546,7 +546,7 @@ span {
 
   .my-img img {
     max-width: 100%;
-    height: auto;
+    min-height: auto;
     display: block;
   }
 
@@ -668,7 +668,7 @@ span {
   .my-img img {
     max-width: 100%;
     min-height: 100%;
-    height: auto;
+    /* height: auto; */
     /* display: block; */
     object-fit: cover;
     /* border-radius: 10px; */
